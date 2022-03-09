@@ -28,7 +28,7 @@ function preload(){
 
 function setup() {
   createCanvas(800, 600);
-  background(0);
+  background(255);
   //crea la espada/cuchillo
    sponge=createSprite(200,200,20,20);
    sponge.addImage(spongeImage);
@@ -54,8 +54,8 @@ function setup() {
 }
 
 function draw() {
-  background(125,30,100);
-
+  background(255);
+  background(backgroundImg)
   if(gameState===PLAY){
     
     //Llama la función de frutas y Monstruo
@@ -110,7 +110,7 @@ function draw() {
   drawSprites();
   //Muestra la puntuación
   textSize(25);
-  fill(0);
+  fill(255);
   text("Money : "+ score,620,50);
   text("Tries: "+ life,400,50);
 }
